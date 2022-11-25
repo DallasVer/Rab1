@@ -5,10 +5,10 @@ void main(List<String> arguments) {
   var f = 1;
   List<int> wop = [];
   print(
-      'Ввидите что-нибудь для заполнения массива, если считаете что достаточно то введите 0');
+      'Введите что-нибудь для заполнения массива, если считаете что достаточно то введите 0');
   do {
     var x = int.parse(stdin.readLineSync()!);
-    if (x == 0) {
+    if (x < 0) {
       break;
     } else {
       wop.add(-10 + Random().nextInt(20 - -10));
